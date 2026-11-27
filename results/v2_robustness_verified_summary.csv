@@ -1,0 +1,28 @@
+section,group,analysis,participants,probes,AUC,notes
+feature_time,ADHD,Behavior,28,420,0.6434089753214987,Corrected v2 primary LOSO
+feature_time,ADHD,Reduced feature set,28,420,0.6441355259015282,Remove rt_slope
+feature_time,ADHD,Probe number only,28,420,0.5851880555084643,Time-only LOSO
+feature_time,ADHD,Behavior + probe number,28,420,0.6581337337434309,Combined time and behavior
+feature_time,ADHD,Detrended behavior,28,420,0.6234530527233537,Training-fold-only linear time detrend
+feature_time,Control,Behavior,28,420,0.5847575516693164,Corrected v2 primary LOSO
+feature_time,Control,Reduced feature set,28,420,0.5949672098569156,Remove rt_slope
+feature_time,Control,Probe number only,28,420,0.6095737281399046,Time-only LOSO
+feature_time,Control,Behavior + probe number,28,420,0.6329988076311606,Combined time and behavior
+feature_time,Control,Detrended behavior,28,420,0.5745478934817171,Training-fold-only linear time detrend
+participant_influence,ADHD,Minimum AUC excluding one person's predictions,28,420,0.6110962352059123,Posthoc held-out prediction deletion; model not refitted
+participant_influence,ADHD,Maximum AUC excluding one person's predictions,28,420,0.6736240858378263,Posthoc held-out prediction deletion; model not refitted
+participant_influence,Control,Minimum AUC excluding one person's predictions,28,420,0.5690220553234251,Posthoc held-out prediction deletion; model not refitted
+participant_influence,Control,Maximum AUC excluding one person's predictions,28,420,0.596684350132626,Posthoc held-out prediction deletion; model not refitted
+model_comparison,Pooled,Logistic Regression,56,840,0.6239372954701422,Corrected v2 five-feature LOSO
+model_comparison,ADHD,Logistic Regression,28,420,0.6434089753214987,Corrected v2 five-feature LOSO
+model_comparison,Control,Logistic Regression,28,420,0.5847575516693164,Corrected v2 five-feature LOSO
+model_comparison,Control → ADHD,Logistic Regression,28,420,0.5204039621224964,Train controls; test ADHD
+model_comparison,ADHD → Control,Logistic Regression,28,420,0.5619534976152623,Train ADHD; test controls
+model_comparison,Pooled,Linear SVM,56,840,0.6250375739426834,Decision function ROC AUC
+model_comparison,ADHD,Linear SVM,28,420,0.6447167663655518,Decision function ROC AUC
+model_comparison,Control,Linear SVM,28,420,0.5862976947535772,Decision function ROC AUC
+model_comparison,Control → ADHD,Linear SVM,28,420,0.518636022377758,Decision function ROC AUC
+model_comparison,ADHD → Control,Linear SVM,28,420,0.5630216613672496,Decision function ROC AUC
+model_comparison,ADHD,Random Forest,28,420,0.6033760383618707,500-tree original configuration; other cohorts unfinished
+subtype,Pooled MW subtype,>=1 of each subtype,41,343,0.5225308862386632,MW-S positive; MW-D negative; participant AUC median 0.4583
+subtype,Pooled MW subtype,>=2 of each subtype,29,273,0.5217605248769819,MW-S positive; MW-D negative; participant AUC median 0.5000

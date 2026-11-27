@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Raw / downloaded ATTLAPSE data
+attlapse_beh/
+attlapse_preprocessed/
+attlapse_metadata/
+attlapse_ASRS/
+attlapse_demographic/
+BIDS/
+
+# Participant-level derived datasets
+attlapse_behavior_master_v1.csv
+attlapse_behavior_features_v1.csv
+
+# Temporary files
+*.tmp
+*.log
+
+# Root-level participant SART files
+/sub-*_task-sart_*
+
+# Archived / exploratory notebooks
+notebooks/archive_original/
+
+# Root-level working notebooks
+/*.ipynb
+
+# Internal repository-cleanup audit
+docs/notebook_structure_inventory.txt
+
+# Local-only recalculated v2 results; committed v2 aggregates stay fixed
+results/v2_recomputed/
+
+# Local-only regenerated figure files
+figures/v2_recomputed/

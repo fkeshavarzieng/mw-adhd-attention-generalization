@@ -1,0 +1,9 @@
+group,state,state_v2,changed,count
+ADHD,MW-D,MW-D,False,80
+ADHD,MW-S,MW-S,False,179
+ADHD,OT,MW-D,True,4
+ADHD,OT,OT,False,157
+Control,MW-D,MW-D,False,40
+Control,MW-S,MW-S,False,95
+Control,OT,MW-D,True,13
+Control,OT,OT,False,272
